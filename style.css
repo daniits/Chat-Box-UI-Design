@@ -60,3 +60,36 @@
   font-size: 16px;
   font-weight: 300;
 }
+::placeholder {
+  color: #fff;
+}
+.col-2 h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.col-2 ul {
+  list-style: none;
+  padding: 30px;
+}
+.col-2 ul li {
+  padding: 5px 0;
+}
+.col-2 ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  margin-right: 10px;
+}
+.col-2 ul li.online::before {
+  background-color: greenyellow;
+}
+.col-2 ul li.offline::before {
+  background-color: tomato;
+}
+.col-2 ul li.busy::before {
+  background-color: yellow;
+}
